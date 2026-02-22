@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book a Charter — SkyLux</title>
+</head>
+<body>
+    <div class="left-panel">
+  <div class="left-bg"></div>
+  <div class="left-content">
+    <a href="index.html" class="logo">Sky<span>Lux</span></a>
+    <p class="panel-quote">"Every great journey begins with a single, bold decision."</p>
+    <p class="panel-caption">✦ Join the SkyLux Family ✦</p>
+    <div style="margin-top:3rem;">
+      <div class="perks">
+        <div class="perk"><span class="perk-icon">✦</span> Priority access to new routes & aircraft</div>
+        <div class="perk"><span class="perk-icon">✦</span> Exclusive member-only pricing</div>
+        <div class="perk"><span class="perk-icon">✦</span> 24/7 dedicated concierge service</div>
+        <div class="perk"><span class="perk-icon">✦</span> SkyLux Rewards points on every flight</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="right-panel">
+  <p class="form-eyebrow">Join SkyLux</p>
+  <h1 class="form-title">Create Account</h1>
+  <p class="form-sub">Begin your private aviation journey today.</p>
+
+  <form onsubmit="handleSignup(event)">
+    <div class="input-row">
+      <div class="input-group">
+        <label class="input-label">First Name</label>
+        <input type="text" class="input-field" placeholder="James" required>
+      </div>
+      <div class="input-group">
+        <label class="input-label">Last Name</label>
+        <input type="text" class="input-field" placeholder="Hartwell" required>
+      </div>
+    </div>
+
+    <div class="input-group">
+      <label class="input-label">Email Address</label>
+      <input type="email" class="input-field" placeholder="james@hartwell.com" required>
+    </div>
+
+    <div class="input-group">
+      <label class="input-label">Phone Number</label>
+      <input type="tel" class="input-field" placeholder="+1 (555) 000-0000" required>
+    </div>
+
+    <div class="input-group">
+      <label class="input-label">Country of Residence</label>
+      <select class="input-field" required>
+        <option value="" disabled selected>Select Country</option>
+        <option>United States</option>
+        <option>United Kingdom</option>
+        <option>UAE</option>
+        <option>France</option>
+        <option>Germany</option>
+        <option>Switzerland</option>
+        <option>Singapore</option>
+        <option>India</option>
+        <option>Other</option>
+      </select>
+    </div>
+
+    <div class="input-group">
+      <label class="input-label">Membership Tier</label>
+      <div class="membership-select">
+        <label class="membership-option">
+          <input type="radio" name="tier" value="silver">
+          <div class="membership-card">
+            <p class="membership-card-name">Silver</p>
+            <p class="membership-card-desc">Casual flyer</p>
+          </div>
+        </label>
+        <label class="membership-option">
+          <input type="radio" name="tier" value="gold" checked>
+          <div class="membership-card">
+            <p class="membership-card-name">Gold</p>
+            <p class="membership-card-desc">Frequent traveller</p>
+          </div>
+        </label>
+        <label class="membership-option">
+          <input type="radio" name="tier" value="platinum">
+          <div class="membership-card">
+            <p class="membership-card-name">Platinum</p>
+            <p class="membership-card-desc">Elite member</p>
+          </div>
+        </label>
+      </div>
+    </div>
+
+    <div class="input-group">
+      <label class="input-label">Password</label>
+      <input type="password" class="input-field" placeholder="Minimum 8 characters" oninput="checkStrength(this.value)" required>
+      <div class="password-strength"><div class="password-bar" id="pwBar"></div></div>
+    </div>
+
+    <div class="input-group">
+      <label class="input-label">Confirm Password</label>
+      <input type="password" class="input-field" placeholder="••••••••" required>
+    </div>
+
+    <label class="terms-label">
+      <input type="checkbox" required>
+      <span class="check-box"></span>
+      <span>I agree to SkyLux's <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a>. I understand my data will be handled per our aviation data standards.</span>
+    </label>
+
+    <button type="submit" class="btn-submit">Create My SkyLux Account</button>
+  </form>
+
+  <div class="form-footer">
+    Already have an account? <a href="login.html">Sign in →</a>
+  </div>
+</div>
+
+    
+</body>
+</html>
